@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistryActivity"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/registry_pic"
+        android:layout_gravity="center"/>
+
+    <FrameLayout
+        android:id="@+id/sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_frame_layout"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="8dp"
+            android:background="@drawable/bg_item_home"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/tv_label_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/full_name"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginBottom="8dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/white"
+                app:hintEnabled="false"
+                app:boxStrokeColor="@color/grey_light"
+                app:placeholderTextColor="@color/grey_light"
+                app:endIconMode="clear_text"
+                android:layout_below="@+id/tv_label_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="@string/nama"
+                    android:fontFamily="@font/montserrat_light"
+                    android:maxLength="35"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_label_tempat"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_name"
+                android:layout_marginVertical="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/place_of_birth"
+                android:textSize="20sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_tempat"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                app:boxBackgroundColor="@color/white"
+                app:hintEnabled="false"
+                app:boxStrokeColor="@color/grey_light"
+                app:placeholderTextColor="@color/grey_light"
+                app:endIconMode="clear_text"
+                android:layout_below="@+id/tv_label_tempat">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_tempat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="@string/bukittinggi"
+                    android:fontFamily="@font/montserrat_light"
+                    android:maxLength="18"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_label_tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_name"
+                android:layout_toRightOf="@+id/tv_label_tempat"
+                android:layout_marginVertical="8dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/date_of_birth"
+                android:textSize="20sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_tanggal"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/white"
+                app:hintEnabled="false"
+                app:boxStrokeColor="@color/grey_light"
+                app:placeholderTextColor="@color/grey_light"
+                app:endIconMode="clear_text"
+                android:layout_below="@+id/tv_label_tanggal"
+                android:layout_toEndOf="@+id/layout_tempat"
+                android:layout_toRightOf="@+id/layout_tempat">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_tanggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:hint="@string/_17_08_2021"
+                    android:fontFamily="@font/montserrat_light"
+                    android:maxLength="25"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_label_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_tanggal"
+                android:text="@string/phone_number"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginVertical="8dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_phone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/white"
+                app:hintEnabled="false"
+                app:boxStrokeColor="@color/grey_light"
+                app:placeholderTextColor="@color/grey_light"
+                app:prefixText="+62"
+                app:endIconMode="clear_text"
+                android:layout_below="@+id/tv_label_phone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:hint="@string/ex_6285265408417"
+                    android:fontFamily="@font/montserrat_light"
+                    android:maxLength="12"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_label_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_phone"
+                android:text="@string/e_mail"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginVertical="8dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/white"
+                app:hintEnabled="false"
+                app:boxStrokeColor="@color/grey_light"
+                app:placeholderTextColor="@color/grey_light"
+                app:endIconMode="clear_text"
+                android:layout_below="@+id/tv_label_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="@string/email"
+                    android:fontFamily="@font/montserrat_light"
+                    android:maxLength="30"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:theme="@style/Button.color"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_btn_onboard"
+                android:text="@string/submit"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_below="@+id/layout_email"
+                android:layout_marginTop="16dp" />
+        </RelativeLayout>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

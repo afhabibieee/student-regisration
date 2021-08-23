@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Student Registration</string>
+    <string name="profile_name">Adil Faruq Habibi</string>
+    <string name="profile_email">adilfaruqhabibi@gmail.com</string>
+    <string name="nim">197064516198</string>
+    <string name="full_name">Full Name</string>
+    <string name="nama">Adil Faruq Habibi</string>
+    <string name="place_of_birth">Place of birth</string>
+    <string name="bukittinggi">Bukittinggi</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="_17_08_2021">17/08/2021</string>
+    <string name="phone_number">Phone number</string>
+    <string name="ex_6285265408417">ex: +6285265408417</string>
+    <string name="e_mail">E-mail</string>
+    <string name="email">adilfaruqhabibi@gmail.com</string>
+    <string name="submit">Submit</string>
+    <string name="ayo_segera_daftar">Ayo Segera Daftar</string>
+    <string name="kuliah">Kuliah</string>
+    <string name="persiapkan_perjalanan_belajar_kamu_dengan_mendaftar_melalui_aplikasi_ini">Persiapkan perjalanan belajar kamu dengan mendaftar melalui aplikasi ini :))</string>
+    <string name="get_started">Get Started</string>
+    <string name="nama_siswa">Nama Siswa</string>
+    <string name="email_siswa">Email Siswa</string>
+    <string name="update_data">Update Data</string>
+</resources>
